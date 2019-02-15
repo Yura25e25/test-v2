@@ -1,0 +1,246 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:after{
+    content:"";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    min-height: 10px;
+}
+
+/* My code */
+
+header{
+    background: #eb5346;
+    height: 90px;
+    border-bottom: 2px solid #252e39;
+    box-sizing: border-box;
+}
+
+header img{
+    float: left;
+    margin: 20px 0 0 320px;
+}
+
+header h2{
+    color: white;
+    font-size: 27px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    float: left;
+    margin: 35px 0 0 20px;
+}
+
+.show{
+    margin: 90px;
+}
+
+.selection{
+    float: left;
+    width: 360px;
+    margin-left: 30px;
+}
+
+.on{
+    width: 0px;
+    margin: 20px 0 0 175px;
+    border: 20px solid transparent;
+    border-top: 20px solid #eb5346;
+}
+
+.selection h2{
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    background: #252e39;
+    font-size: 22px;
+    color: #fff;
+    width: 210px;
+    padding: 5px 0 5px 0;
+    margin: 0 0 100px 85px;
+    text-transform: uppercase;
+}
+
+.selection p{
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    background: #eb5346;
+    font-size: 22px;
+    color: #fff;
+    width: 312px;
+    padding: 5px 0 5px 0;
+    margin: 100px 0 0 28px;
+    text-transform: uppercase;
+}
+
+.auto_model{
+    float: left;
+    width: 860px;
+}
+
+.auto_model-menu{
+    float: left;
+}
+
+.auto{
+    display: block;
+    margin: 180px 0 0 0;
+}
+
+/* Munu */
+
+.main_munu{
+    margin: 75px 0 0 0;
+}
+
+.main_munu p{
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #252e39;
+    font-size: 16px;
+    display: block;
+    padding: 15px 0px 15px 20px;
+    width: 180px;
+    position: relative;
+}
+
+.valid{
+    background: #eb5346;
+    position: relative;
+}
+
+.valid::after{
+    content: "";
+    position: absolute;
+    border: 23px solid transparent;	
+    border-right: 30px solid #eb5346;
+    top: 0;
+    left: -52px;
+}
+
+.main_munu p:hover::after{
+    display: block;
+}
+
+#part{
+    background: #252e39;
+    color: #fff;
+    position: relative;
+}
+
+#part::after{
+    content: "";
+    position: absolute;
+    border: 23px solid transparent;	
+    border-right: 30px solid #252e39;
+    top: 0;
+    left: -52px;
+    display: block;
+}
+
+
+.one{
+    display: none;
+}
+
+
+/* Price */
+
+.price_block{
+    margin: 140px 0 0 0;
+    height: 175px;
+}
+
+.price_block h2{
+    font-family: 'PT Sans', sans-serif;
+    color: #eb5346;
+    font-size: 22px;
+    position: relative;
+}
+
+.price_block h2::after{
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 1px;
+    background: #252e39;
+    top: 30px;
+}
+
+.price_block h3{
+    font-family: 'PT Sans', sans-serif;
+    color: #252e39;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+}
+
+.price_block h3 span{
+    font-family: 'PT Sans', sans-serif;
+    color: #eb5346;
+    font-size: 16px;
+    margin: 0 0 0 55px;
+}
+
+.one_button{
+    margin: -30px 200px 0 0 ;
+    padding: 14px 40px;
+    background: #252e39;
+    color: white;
+    border: none;
+    font-size: 22px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: right;
+}
+
+.one_button:hover{
+    background: #eb5346;
+}
